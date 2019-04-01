@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts
 MAINTAINER Antonio Sapuppo <antoniosapuppo@yahoo.it>
 
 USER root
-RUN sudo apt-get update && \
+RUN apt-get update && \
         apt-get install -y \
         build-essential \
         cmake \
