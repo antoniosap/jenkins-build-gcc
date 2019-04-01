@@ -17,6 +17,6 @@ RUN wget https://github.com/python/cpython/archive/v3.7.3.zip \
 && rm v3.7.3.zip
 
 RUN ./configure \
-&& make
-&& make test
+&& make \
+&& make test \
 && make install
