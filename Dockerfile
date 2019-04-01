@@ -2,7 +2,6 @@ FROM jenkins/jenkins:lts
 MAINTAINER Antonio Sapuppo <antoniosapuppo@yahoo.it>
 
 USER root
-RUN apt-get install -y apt-utils
 RUN apt-get update && \
         apt-get install -y \
         build-essential \
