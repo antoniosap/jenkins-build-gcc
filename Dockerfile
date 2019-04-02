@@ -8,7 +8,14 @@ RUN apt-get update && \
         cmake \
         git \
         wget \
-        unzip
+        unzip \
+        libffi-dev \
+        libncurses5-dev \
+        libgdbm-dev \
+        libnss3-dev \
+        libssl-dev \
+        libreadline5-dev \
+        zlib1g
 
 WORKDIR /workspace/
 RUN wget https://github.com/python/cpython/archive/v3.7.3.zip \
@@ -16,7 +23,7 @@ RUN wget https://github.com/python/cpython/archive/v3.7.3.zip \
 && rm v3.7.3.zip
 
 RUN cd cpython-3.7.3/ \
-&& ./configure \
+&& ./configure --enable-optimizations \
 && make \
 && make test \
 && make install
