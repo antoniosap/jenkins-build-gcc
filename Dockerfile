@@ -14,7 +14,7 @@ RUN apt-get update && \
         libgdbm-dev \
         libnss3-dev \
         libssl-dev \
-        libreadline5-dev \
+        libreadline-gplv2-dev \
         zlib1g
 
 WORKDIR /workspace
