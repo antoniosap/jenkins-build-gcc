@@ -17,7 +17,7 @@ RUN apt-get update && \
         libreadline5-dev \
         zlib1g
 
-WORKDIR /workspace/
+WORKDIR /workspace
 RUN wget https://github.com/python/cpython/archive/v3.7.3.zip \
 && unzip v3.7.3.zip \
 && rm v3.7.3.zip
