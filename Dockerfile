@@ -15,7 +15,7 @@ RUN apt-get update && \
         libnss3-dev \
         libssl-dev \
         libreadline-gplv2-dev \
-        zlib1g
+        zlib1g-dev
 
 WORKDIR /workspace
 RUN wget https://github.com/python/cpython/archive/v3.7.3.zip \
