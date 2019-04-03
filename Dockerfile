@@ -18,12 +18,15 @@ RUN apt-get update && \
         zlib1g-dev
 
 WORKDIR /workspace
-RUN wget https://github.com/python/cpython/archive/v3.7.3.zip \
-&& unzip v3.7.3.zip \
-&& rm v3.7.3.zip
-
-RUN cd cpython-3.7.3/ \
-&& ./configure --enable-optimizations \
-&& make \
-&& make test \
-&& make install
+#
+# test case
+#RUN wget https://github.com/python/cpython/archive/v3.7.3.zip \
+#&& unzip v3.7.3.zip \
+#&& rm v3.7.3.zip
+#
+#RUN cd cpython-3.7.3/ \
+#&& ./configure --enable-optimizations \
+#&& make \
+#&& make test \
+#&& make install
+#
